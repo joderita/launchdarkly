@@ -3,7 +3,7 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
 
 **Please Note:** This demo application uses the Current weather data API from OpenWeatherMap to provide our website with various weather conditions at cities populated by our users. It also uses the LaunchDarkly SDK to add feature flag functionality to our code. As such, you will need accounts on both OpenWeatherMap and LaunchDarkly in order to complete this demo. Instructions on creating both accounts are included below. 
 
-# How to get started with this app
+# Get started with this app
 1. Clone this project onto your local workstation. From a command line/terminal session:
    * Use `mkdir lddemo` to create a new directory named "lddemo" for this project
    * Use `cd lddemo` to move into your new directory
