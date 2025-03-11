@@ -22,13 +22,13 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
    <img width="223" alt="Screenshot 2025-03-11 at 12 18 18 PM" src="https://github.com/user-attachments/assets/167ebbd8-37b0-4f45-a87a-da18008303bd" />
 
    * From the Projects section of your org, select the Default Project and navigate to Environments. Open the menu for Test environment and select SDK key. This will automatically copy the key to your clipboard
+   <img width="413" alt="Screenshot 2025-03-11 at 12 31 05 PM" src="https://github.com/user-attachments/assets/c99dbee1-b765-43ee-a771-a0604d5b7a6f" />
+
    * In the `.env` file in your `lddemo` directory, add `LD_SDK_KEY=<paste your SDK key here>`, replacing `<paste your SDK key here>` with the SDK key value from your Test environment
 4. Create a new feature flag.
    * 
 
 
-Create a LaunchDarkly account:
-* grab client API key, save it in .env as "LD_API_KEY"
 * create a new feature flag named "wind_speed"
 
 In a terminal session, create .venv file
