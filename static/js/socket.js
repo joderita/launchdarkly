@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Listen for flag changes
     socket.on('flag_change', function(data) {
         console.log('Flag change received:', data);
-        if (data.key === 'wind_speeds') {
+        if (data.key === 'wind-speeds') {
             if (window.location.pathname.includes('/weather')) {
                 console.log('Reloading page due to wind_speeds flag change');
 
