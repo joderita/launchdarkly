@@ -12,7 +12,7 @@ from threading import Lock, Event
 load_dotenv()
 
 # set LD sdk_key to use env variable
-sdk_key = os.getenv("LD_API_KEY")
+sdk_key = os.getenv("LD_SDK_KEY")
 
 # set feature flag value and SDK key value
 feature_flag_key = "wind_speeds"
