@@ -46,7 +46,7 @@ def get_weather():
     if not weather_data['cod'] == 200:
         return render_template('city_not_found.html')
 
-#    context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
+    context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
 
     flag_value = client.variation("wind-speeds", context, False)
 
