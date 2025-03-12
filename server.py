@@ -44,7 +44,7 @@ def get_weather():
 
     # Handle 404 City Not Found by API
     if not weather_data['cod'] == 200:
-        return render_template('city-not-found.html')
+        return render_template('city_not_found.html')
 
     context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
 
