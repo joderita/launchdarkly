@@ -15,7 +15,7 @@ load_dotenv()
 sdk_key = os.getenv("LD_SDK_KEY")
 
 # set feature flag value and SDK key value
-feature_flag_key = "wind_speeds"
+feature_flag_key = "wind-speeds"
 
 ldclient.set_config(Config(sdk_key))
 
@@ -48,7 +48,7 @@ def get_weather():
 
     context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
 
-    flag_value = client.variation("wind_speeds", context, False)
+    flag_value = client.variation("wind-speeds", context, False)
 
     # Use feature flag to serve new feature when flag value is true 
     if flag_value == True:
