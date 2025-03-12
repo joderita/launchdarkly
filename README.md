@@ -26,7 +26,7 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
 
    * In the `.env` file in your `lddemo` directory, add `LD_SDK_KEY=<paste your SDK key here>`, replacing `<paste your SDK key here>` with the SDK key value from your Test environment
 4. **Create and configure a virtual environment to run your app locally.**
-   * If you don't already have Python installed on your workstation, download it now. You can download it directly from the Python website [here](https://www.python.org/downloads/){:target="_blank"} and follow your system's installation prompts
+   * If you don't already have Python installed on your workstation, download it now. You can download it directly from the Python website [here](https://www.python.org/downloads/) and follow your system's installation prompts
    * Use the command below appropriate for your operating system to create and launch a virtual environment on your workstation:
      * For Mac or Linux systems: `python3 -m venv .venv && source .venv/bin/activate`
      * For Windows systems: `py -m venv .venv` and then `source .venv/Scripts/activate`
