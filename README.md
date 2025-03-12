@@ -4,11 +4,11 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
 **Please Note:** This demo application uses the Current weather data API from OpenWeatherMap to provide our website with various weather conditions at cities populated by our users. It also uses the LaunchDarkly SDK to add feature flag functionality to our code. As such, you will need accounts on both OpenWeatherMap and LaunchDarkly in order to complete this demo. Instructions on creating both accounts are included below. 
 
 # Get started with this app
-1. Clone this project onto your local workstation. From a command line/terminal session:
+1. **Clone this project onto your local workstation. From a command line/terminal session:**
    * Use `mkdir lddemo` to create a new directory named "lddemo" for this project
    * Use `cd lddemo` to move into your new directory
    * Use `git clone https://github.com/joderita/launchdarkly.git .` to clone this repository into your new directory
-2. Get an API key from https://openweathermap.org.
+2. **Get an API key from https://openweathermap.org.**
    * Navigate to https://openweathermap.org and create an account using your email address
    * Verify your email address (be sure to check your Spam folder!)
    * Once verified, navigate to My API Keys under your profile name
@@ -16,7 +16,7 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
 
    * Copy your Default API key
    * Create a `.env` file in your `lddemo` directory and add `WEATHER_API_KEY=<paste your API key here>`, replacing `<paste your API key here>` with the API key value from openweathermap.org
-3. Get an SDK key from https://launchdarkly.com.
+3. **Get an SDK key from https://launchdarkly.com.**
    * Navigate to https://app.launchdarkly.com/signup and create a free trial account
    * Verify your email address (be sure to check your Spam folder!) and select "Skip setup" on the resulting page to go directly to your new organization page
    <img width="223" alt="Screenshot 2025-03-11 at 12 18 18 PM" src="https://github.com/user-attachments/assets/167ebbd8-37b0-4f45-a87a-da18008303bd" />
@@ -25,7 +25,19 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
    <img width="413" alt="Screenshot 2025-03-11 at 12 31 05 PM" src="https://github.com/user-attachments/assets/c99dbee1-b765-43ee-a771-a0604d5b7a6f" />
 
    * In the `.env` file in your `lddemo` directory, add `LD_SDK_KEY=<paste your SDK key here>`, replacing `<paste your SDK key here>` with the SDK key value from your Test environment
-4. Create a new feature flag.
+4. **Create and configure a virtual environment to run your app locally.**
+   * If you don't already have Python installed on your workstation, download it now. You can download it directly from the Python website [here](https://www.python.org/downloads/){:target="_blank"} and follow your system's installation prompts
+   * Use the command below appropriate for your operating system to create and launch a virtual environment on your workstation:
+     * For Mac or Linux systems: `python3 -m venv .venv && source .venv/bin/activate`
+     * For Windows systems: `py -m venv .venv` and then `source .venv/Scripts/activate`
+   * 
+
+
+
+
+4. **Create a new feature flag.**
+   * Navigate to the Flags section of LaunchDarkly and select "Create flag"
+   * Name your flag "Wind Speeds". This should cause the "Key" value to autopopulate; ensure that the value is "wind-speeds"
    * 
 
 
