@@ -1,5 +1,5 @@
 # LaunchDarkly demo
-The goal of this app is to demonstrate seamless feature releases and instant remediation/rollback of impacting changes using LaunchDarkly feature flags. By the end of this project, you'll also understand how to define specific audiences for your feautre release, giving you the ability to target specific individuals for testing purposes or groups of users based on rulesets. You can read more about instant feature flag updates in [this blog post](https://launchdarkly.com/blog/how-near-instant-feature-flag-updates-ensure-your-app/), or learn how to implement your own feature flags in [this Getting Started guide](https://app.launchdarkly.com/projects/default/get-started?env=test&selected-env=test).
+The goal of this app is to demonstrate seamless feature releases and instant remediation/rollback of impacting changes using LaunchDarkly feature flags. By the end of this project, you'll also understand how to define specific audiences for your feautre release, giving you the ability to target individuals for testing purposes or groups of users based on rulesets. You can read more about instant feature flag updates in [this blog post](https://launchdarkly.com/blog/how-near-instant-feature-flag-updates-ensure-your-app/), or learn how to implement your own feature flags in [this Getting Started guide](https://app.launchdarkly.com/projects/default/get-started?env=test&selected-env=test).
 
 **Please Note:** This demo application uses the Current weather data API from OpenWeatherMap to provide our website with various weather conditions at cities populated by our users. It also uses the LaunchDarkly SDK to add feature flag functionality to our code. As such, you will need accounts on both OpenWeatherMap and LaunchDarkly in order to complete this demo. Instructions on creating both accounts are included below. 
 
@@ -30,6 +30,8 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
    * Use the command below appropriate for your operating system to create and launch a virtual environment on your workstation:
      * For Mac or Linux systems: `python3 -m venv .venv && source .venv/bin/activate`
      * For Windows systems: `py -m venv .venv` and then `source .venv/Scripts/activate`
+   * Use `pip install requests python-dotenv Flask launchdarkly-server-sdk` to install the necessary packages to run our application.
+   * Use `pip freeze > requirements.txt` to create a file that lets our host server know what packages it needs installed.
    * 
 
 
