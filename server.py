@@ -105,7 +105,7 @@ class FlagValueChangeListener:
 
 
 if __name__ == "__main__":
-#    context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
+    context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
     
     # Initial flag value
     flag_value = ldclient.get().variation(feature_flag_key, context, False)
