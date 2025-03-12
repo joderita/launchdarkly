@@ -108,16 +108,16 @@ if __name__ == "__main__":
 #    context = Context.builder('bpiper').kind('user').name('Billie Piper').set('email', 'bpiper@wolfcorp.com').build()
     
     # Initial flag value
-#    flag_value = ldclient.get().variation(feature_flag_key, context, False)
-#    show_evaluation_result(feature_flag_key, flag_value)
+    flag_value = ldclient.get().variation(feature_flag_key, context, False)
+    show_evaluation_result(feature_flag_key, flag_value)
 
     # Set up flag change listener
-#    change_listener = FlagValueChangeListener()
-#    listener = ldclient.get().flag_tracker.add_flag_value_change_listener(
-#        feature_flag_key, 
-#        context, 
-#        change_listener.flag_value_change_listener
-#    )
+    change_listener = FlagValueChangeListener()
+    listener = ldclient.get().flag_tracker.add_flag_value_change_listener(
+        feature_flag_key, 
+        context, 
+        change_listener.flag_value_change_listener
+    )
 
     # Run the server with SocketIO
     socketio.run(app, host="0.0.0.0", port=8000, debug=True, allow_unsafe_werkzeug=True)
