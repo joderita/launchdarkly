@@ -5,8 +5,7 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
 
 # Get started with this app
 1. **Clone this project onto your local workstation. From a command line/terminal session:**
-   * Use `mkdir lddemo` to create a new directory named "lddemo" for this project
-   * Use `cd lddemo` to move into your new directory
+   * Use `mkdir lddemo && cd lddemo` to create and move into a new directory named "lddemo" for this project 
    * Use `git clone https://github.com/joderita/launchdarkly.git .` to clone this repository into your new directory
 2. **Get an API key from https://openweathermap.org.**
    * Navigate to https://openweathermap.org and create an account using your email address
