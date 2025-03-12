@@ -29,26 +29,24 @@ The goal of this app is to demonstrate seamless feature releases and instant rem
    * Use the command below appropriate for your operating system to create and launch a virtual environment on your workstation:
      * For Mac or Linux systems: `python3 -m venv .venv && source .venv/bin/activate`
      * For Windows systems: `py -m venv .venv` and then `source .venv/Scripts/activate`
-   * Use `pip install requests python-dotenv Flask launchdarkly-server-sdk` to install the necessary packages to run our application.
-   * Use `pip freeze > requirements.txt` to create a file that lets our host server know what packages it needs installed.
-   * 
+   * Use `pip install requests python-dotenv Flask flask-socketio launchdarkly-server-sdk` to install the necessary packages to run our application.
+   * Use `pip freeze > requirements.txt` to create a file that will let our host server know what packages it needs installed.
+5. **Run your app locally on your workstation.**
+   * Use `python3 server.py` to start the application.
+   * Open a browser window and navigate to http://localhost:8000. You should see our landing page
+   <img width="332" alt="Screenshot 2025-03-12 at 2 40 47 PM" src="https://github.com/user-attachments/assets/62b7e99c-9a26-4f2d-bc54-80c76ef1747c" />
+   
+   * Test that the app is working properly by entering a city name into the form field and clicking Submit
+   <img width="332" alt="Screenshot 2025-03-12 at 2 42 32 PM" src="https://github.com/user-attachments/assets/e77e354e-cae0-4c19-a76b-d224d3056ac6" />
 
-
-
-
-4. **Create a new feature flag.**
-   * Navigate to the Flags section of LaunchDarkly and select "Create flag"
+6. **Create a new feature flag.**
+   * In another browser window, navigate to https://launchdarkly.com/ the Flags section of LaunchDarkly and select "Create flag"
    * Name your flag "Wind Speeds". This should cause the "Key" value to autopopulate; ensure that the value is "wind-speeds"
    * 
 
 
 * create a new feature flag named "wind_speed"
 
-In a terminal session, create .venv file
-Launch virtual environment
-Install Python, Flask, JavaScript?
-python server.py to start app
-Open browser to localhost:8000
-Enter a city
+
 Toggle feature flag, watch the magic happen
 
